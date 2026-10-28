@@ -1,0 +1,20 @@
+{
+  "notice": "All records are invented. No real customers, invoices, OCR, or bank data.",
+  "basis_month": "2026-09",
+  "transfers": [
+    {"id":"T-001","basis_month":"2026-09","amount":1200,"transferred_at":"2026-10-01"},
+    {"id":"T-002","basis_month":"2026-09","amount":800,"transferred_at":"2026-10-02"},
+    {"id":"T-003","basis_month":"2026-10","amount":500,"transferred_at":"2026-10-02"}
+  ],
+  "expected": [
+    {"id":"DEMO-001","category":"service","date":"2026-09-30","amount":1200},
+    {"id":"DEMO-002","category":"goods","date":"2026-09-30","amount":800},
+    {"id":"DEMO-003","category":"service","date":"2026-09-30","amount":500}
+  ],
+  "actual": [
+    {"id":"DEMO-001","category":"goods","date":"2026-10-01","amount":1200},
+    {"id":"DEMO-002","category":"goods","date":null,"amount":800}
+  ],
+  "ocr":{"invoice_id":"FAKE-OCR-001","date":"2026-09-30","amount":"I200"},
+  "rounding_lines":[105,105,105]
+}
