@@ -1,0 +1,77 @@
+{
+  "monthly": {
+    "basis_month": "2026-09",
+    "count": 2,
+    "total": 2000
+  },
+  "reconcile": [
+    {
+      "id": "DEMO-001",
+      "issues": [
+        "category_mismatch",
+        "date_mismatch"
+      ]
+    },
+    {
+      "id": "DEMO-002",
+      "issues": [
+        "missing_field:date"
+      ]
+    },
+    {
+      "id": "DEMO-003",
+      "issues": [
+        "missing_record"
+      ]
+    }
+  ],
+  "idempotency": [
+    {
+      "id": 1,
+      "replayed": false
+    },
+    {
+      "id": 1,
+      "replayed": true
+    }
+  ],
+  "ocr": {
+    "fields": {
+      "invoice_id": "FAKE-OCR-001",
+      "date": "2026-09-30",
+      "amount": 1200
+    },
+    "approved": true,
+    "events": [
+      {
+        "action": "ocr_import",
+        "version": 0,
+        "fields": {
+          "invoice_id": "FAKE-OCR-001",
+          "date": "2026-09-30",
+          "amount": "I200"
+        }
+      },
+      {
+        "action": "correction",
+        "actor": "fictional-reviewer",
+        "field": "amount",
+        "before": "I200",
+        "after": 1200,
+        "version": 1
+      },
+      {
+        "action": "approval",
+        "actor": "fictional-approver",
+        "version": 1
+      }
+    ]
+  },
+  "rounding": {
+    "rate": "0.10",
+    "mode": "floor",
+    "per_line": 30,
+    "per_invoice": 31,
+    "difference": 1
+  }
+}

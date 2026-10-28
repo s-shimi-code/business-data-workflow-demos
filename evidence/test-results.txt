@@ -1,0 +1,17 @@
+test_concurrent_double_click (test_demos.DemoTests.test_concurrent_double_click) ... ok
+test_create_replay_restart_and_conflict (test_demos.DemoTests.test_create_replay_restart_and_conflict) ... ok
+test_create_rollback_then_retry (test_demos.DemoTests.test_create_rollback_then_retry) ... ok
+test_month_fixed_across_transfer_boundary_and_retry (test_demos.DemoTests.test_month_fixed_across_transfer_boundary_and_retry) ... ok
+test_month_invalid_and_duplicate (test_demos.DemoTests.test_month_invalid_and_duplicate) ... ok
+test_ocr_correct_approve_retry_and_invalidate (test_demos.DemoTests.test_ocr_correct_approve_retry_and_invalidate) ... ok
+test_ocr_public_copies_cannot_change_approved_state (test_demos.DemoTests.test_ocr_public_copies_cannot_change_approved_state) ... ok
+test_rate_float_rejected_and_decimal_exact (test_demos.DemoTests.test_rate_float_rejected_and_decimal_exact) ... ok
+test_reconcile_classification_and_retry (test_demos.DemoTests.test_reconcile_classification_and_retry) ... ok
+test_reconcile_matched_invalid_and_ambiguous (test_demos.DemoTests.test_reconcile_matched_invalid_and_ambiguous) ... ok
+test_rounding_comparison_repeatable (test_demos.DemoTests.test_rounding_comparison_repeatable) ... ok
+test_rounding_rejects_invalid (test_demos.DemoTests.test_rounding_rejects_invalid) ... ok
+
+----------------------------------------------------------------------
+Ran 12 tests in 0.127s
+
+OK

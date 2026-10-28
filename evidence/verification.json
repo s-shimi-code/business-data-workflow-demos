@@ -1,0 +1,17 @@
+{
+  "executed_at_utc": "2026-10-28T10:21:59.245738+00:00",
+  "python": "3.12.10",
+  "test_exit_code": 0,
+  "demo_exit_code": 0,
+  "test_count": 12,
+  "test_command": "python -m unittest -v",
+  "demo_command": "python demos.py all",
+  "network_used_by_demos": false,
+  "source_sha256": {
+    "demos.py": "0fd2e639bf24dca7b024c7a8385428c5de6a48783677c99eab07889c91c0ece1",
+    "test_demos.py": "8064f09ae5de410ba055088ec7d8e607c289a725ce90c1c6b0a3edc03a58b8ac",
+    "fixtures.json": "22fa3d63c31895d693095399e5c90142f493fbb77a070a6ae0c289b160fa90c7",
+    "README.md": "78e1b1e9111241802a71e33242846c371812660b5b1f6967b2bd3b0edb75db20",
+    "verify.py": "2f7fb59b0e231c672b11ed045d1dbfbb31fc4eea2935e4ddf242d4be58fcbcfb"
+  }
+}
